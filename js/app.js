@@ -27,4 +27,13 @@ UI.prototype.showNav = () =>
   document.querySelector(".nav").classList.toggle("nav-show");
 
 //play and pause the video
-UI.prototype.videoControl();
+UI.prototype.videoControl = () => {
+  let btn = document.querySelector(".video__switch-btn");
+  if (!btn.classList.contains("btnSlide")) {
+    btn.classList.add("btnSlide");
+    document.querySelector(".video__item").pause();
+  } else {
+    btn.classList.remove("btnSlide");
+    document.querySelector(".video__item").play();
+  }
+};
