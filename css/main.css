@@ -59,6 +59,11 @@
 .section-title {
   padding: 1rem 0.5rem;
 }
+
+.section-title--left {
+  margin-left: 10rem;
+}
+
 .text-slanted {
   font-family: "Parisienne", cursive;
 }
@@ -320,11 +325,13 @@ body {
   display: block;
   color: red;
   border-color: red;
+  background: #ffffff;
 }
 .success {
   display: block;
   color: green;
   border-color: green;
+  background: #ffffff;
 }
 
 .room-form-title,
@@ -383,7 +390,7 @@ body {
   align-items: center;
   grid-gap: 1rem;
   text-align: left;
-  border: 0.1rem solid rgba(255, 255, 255, 0.63);
+  background: rgb(0, 19, 34);
   padding: 0.5rem;
   border-radius: 0.7rem;
   font-size: 1rem;
@@ -392,6 +399,7 @@ body {
 .person-thumbnail {
   width: 150px;
   height: 150px;
+
   border-radius: 50%;
   object-fit: cover;
   border: 0.1rem solid rgba(255, 255, 255, 0.63);
